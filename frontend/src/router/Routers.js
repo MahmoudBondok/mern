@@ -5,15 +5,19 @@ import Home from './../pages/Home'
 import Login from './../pages/Login'
 import Register from './../pages/Register'
 import SearchResultList from './../pages/SearchResultList'
-import TourDetails from './../pages/TourDetails'
 import Tours from './../pages/Tours'
+import TourDetails from './../pages/TourDetails'
+import HotelDetails from './../pages/HotelDetails'
+import Hotel from './../pages/Hotel'
 
 const Routers = () => {
    return (
       <Routes>
          <Route path='/' element={<Navigate to='/home'/>} />
          <Route path='/home' element={<Home/>} />
+         <Route path='/hotel' element={<Hotel/>} />
          <Route path='/tours' element={<Tours/>} />
+         <Route path='/hotel/:id' element={<HotelDetails/>} />
          <Route path='/tours/:id' element={<TourDetails/>} />
          <Route path='/login' element={<Login/>} />
          <Route path='/register' element={<Register/>} />

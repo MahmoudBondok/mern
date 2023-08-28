@@ -43,9 +43,6 @@
    margin-bottom: 1rem;
 }
 
-.footer__quick-links p {
-   font-size: 1.2rem;
-}
 
 .copyright {
    color    : var(--text-color);

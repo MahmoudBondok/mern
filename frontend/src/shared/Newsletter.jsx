@@ -10,11 +10,11 @@ const NewsLetter = () => {
             <Row>
                <Col lg='6'>
                   <div className="newsletter__content">
-                     <h2>Subcribe now to get useful traveling information</h2>
+                     <h2>اشترك الآن للحصول على معلومات السفر المفيدة</h2>
 
                      <div className="newsletter__input">
-                        <input type="email" placeholder='Enter your email' />
-                        <button className="btn newsletter__btn">Subcribe</button>
+                        <input type="email" placeholder='ادخل البريد الالكتروني' />
+                        <button className="btn newsletter__btn">اشتراك</button>
                      </div>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Obcaecati adipisici sunt in, provident facere ipsam?

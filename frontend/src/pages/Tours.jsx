@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import CommonSection from '../shared/CommonSection'
-// import tourData from '../assets/data/tours'
+import tourData from '../assets/data/tours'
 import '../styles/tour.css'
 import TourCard from './../shared/TourCard'
 import SearchBar from './../shared/SearchBar'
@@ -25,7 +25,7 @@ const Tours = () => {
 
    return (
       <>
-         <CommonSection title={"All Tours"} />
+         <CommonSection title={"جميع الرحلات"} />
          <section>
             <Container>
                <Row>
@@ -36,7 +36,7 @@ const Tours = () => {
 
          <section className='pt-0'>
             <Container>
-               {loading && <h4 className='text-center pt-5'>LOADING..........</h4>}
+               {loading && <h4 className='text-center pt-5'>تحميل...</h4>}
                {error && <h4 className='text-center pt-5'>{error}</h4>}
                {
                   !loading && !error &&

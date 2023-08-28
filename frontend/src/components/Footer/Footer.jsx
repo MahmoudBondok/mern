@@ -71,7 +71,7 @@ const Footer = () => {
                </Col>
 
                <Col lg='3'>
-                  <h5 className="footer__link-title">Discover</h5>
+                  <h5 className="footer__link-title">اكتشف</h5>
 
                   <ListGroup className='footer__quick-links'>
                      {
@@ -84,7 +84,7 @@ const Footer = () => {
                   </ListGroup>
                </Col>
                <Col lg='3'>
-                  <h5 className="footer__link-title">Quick Links</h5>
+                  <h5 className="footer__link-title">روابط سريعة</h5>
 
                   <ListGroup className='footer__quick-links'>
                      {
@@ -97,21 +97,21 @@ const Footer = () => {
                   </ListGroup>
                </Col>
                <Col lg='3'>
-                  <h5 className="footer__link-title">Contact</h5>
+                  <h5 className="footer__link-title">اتصل بنا</h5>
 
                   <ListGroup className='footer__quick-links'>
                      <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                         <h6 className='mb-0 d-flex align-items-center gap-2'>
                            <span><i class='ri-map-pin-line'></i></span>
-                           Address:
+                           العنوان:
                         </h6>
-                        <p className='mb-0'>Viet Nam</p>
+                        <p className='mb-0'>الامارات العربية المتحدة</p>
                      </ListGroupItem>
 
                      <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                         <h6 className='mb-0 d-flex align-items-center gap-2'>
                            <span><i class='ri-mail-line'></i></span>
-                           Email:
+                           البريد الالكتروني:
                         </h6>
 
                         <p className='mb-0'>quannguyen2101999@gmail.com</p>
@@ -120,16 +120,12 @@ const Footer = () => {
                      <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                         <h6 className='mb-0 d-flex align-items-center gap-2'>
                            <span><i class='ri-phone-fill'></i></span>
-                           Phone:
+                           رقم الهاتف:
                         </h6>
 
                         <p className='mb-0'>+84 123456789</p>
                      </ListGroupItem>
                   </ListGroup>
-               </Col>
-
-               <Col lg='12' className='text-center pt-5'>
-                  <p className="copyright">Copyright {year}, design and develop by QuanBanana. All riights reserved.</p>
                </Col>
             </Row>
          </Container>

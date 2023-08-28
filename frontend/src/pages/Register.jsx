@@ -57,21 +57,21 @@ const Register = () => {
                         <div className="user">
                            <img src={userIcon} alt="" />
                         </div>
-                        <h2>Register</h2>
+                        <h2>تسجيل</h2>
 
                         <Form onSubmit={handleClick}>
                            <FormGroup>
-                              <input type="text" placeholder='Username' id='username' onChange={handleChange} required />
+                              <input type="text" placeholder='اسم المستخدم' id='username' onChange={handleChange} required />
                            </FormGroup>
                            <FormGroup>
-                              <input type="email" placeholder='Email' id='email' onChange={handleChange} required />
+                              <input type="email" placeholder='البريد الالكتروني' id='email' onChange={handleChange} required />
                            </FormGroup>
                            <FormGroup>
-                              <input type="password" placeholder='Password' id='password' onChange={handleChange} required />
+                              <input type="password" placeholder='كلمة السر' id='password' onChange={handleChange} required />
                            </FormGroup>
-                           <Button className='btn secondary__btn auth__btn' type='submit'>Create Account</Button>
+                           <Button className='btn secondary__btn auth__btn' type='submit'>انشاء حساب</Button>
                         </Form>
-                        <p>Already have an account? <Link to='/login'>Login</Link></p>
+                        <p>هل لديك حساب؟ <Link to='/login'>تسجيل الدخول</Link></p>
                      </div>
                   </div>
                </Col>

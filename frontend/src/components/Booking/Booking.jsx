@@ -61,7 +61,7 @@ const Booking = ({ tour, avgRating }) => {
    return (
       <div className='booking'>
          <div className="booking__top d-flex align-items-center justify-content-between">
-            <h3>${price} <span>/per person</span></h3>
+            <h3>${price} <span>/للشخص الواحد</span></h3>
             <span className="tour__rating d-flex align-items-center">
                <i class='ri-star-fill' style={{ 'color': 'var(--secondary-color)' }}></i>
                {avgRating === 0 ? null : avgRating} ({reviews?.length})
@@ -70,7 +70,7 @@ const Booking = ({ tour, avgRating }) => {
 
          {/* =============== BOOKING FORM START ============== */}
          <div className="booking__form">
-            <h5>Information</h5>
+            <h5>معلومات</h5>
             <Form className='booking__info-form' onSubmit={handleClick}>
                <FormGroup>
                   <input type="text" placeholder='Full Name' id='fullName' required
@@ -95,20 +95,20 @@ const Booking = ({ tour, avgRating }) => {
          <div className="booking__bottom">
             <ListGroup>
                <ListGroupItem className='border-0 px-0'>
-                  <h5 className='d-flex align-items-center gap-1'>${price} <i class='ri-close-line'></i> 1 person</h5>
+                  <h5 className='d-flex align-items-center gap-1'>${price} <i class='ri-close-line'></i> 1 شخص</h5>
                   <span> ${price}</span>
                </ListGroupItem>
                <ListGroupItem className='border-0 px-0'>
-                  <h5>Service charge</h5>
+                  <h5>تكلفة الخدمة</h5>
                   <span>${serviceFee}</span>
                </ListGroupItem>
                <ListGroupItem className='border-0 px-0 total'>
-                  <h5>Total</h5>
+                  <h5>المجموع</h5>
                   <span>${totalAmount}</span>
                </ListGroupItem>
             </ListGroup>
 
-            <Button className='btn primary__btn w-100 mt-4' onClick={handleClick}>Book Now</Button>
+            <Button className='btn primary__btn w-100 mt-4' onClick={handleClick}>احجز الان</Button>
          </div>
       </div>
    )

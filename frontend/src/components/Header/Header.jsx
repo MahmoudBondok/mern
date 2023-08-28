@@ -8,15 +8,19 @@ import { AuthContext } from '../../context/AuthContext'
 const nav__links = [
    {
       path: '/home',
-      display: 'Home'
+      display: 'الرئيسية'
    },
    {
       path: '/about',
-      display: 'About'
+      display: 'معلومات عنا'
    },
    {
       path: '/tours',
-      display: 'Tours'
+      display: 'الطيران'
+   },
+   {
+      path: '/hotel',
+      display: 'الفنادق'
    },
 ]
 
@@ -78,10 +82,10 @@ const Header = () => {
                      <div className="nav__btns d-flex align-items-center gap-2">
                         {
                            user ? <> <h5 className='mb-0'>{user.username}</h5>
-                                 <Button className='btn btn-dark' onClick={logout}>Logout</Button>
+                                 <Button className='btn btn-dark' onClick={logout}>تسجيل خروج</Button>
                               </> : <>
-                                 <Button className='btn secondary__btn'><Link to='/login'>Login</Link></Button>
-                                 <Button className='btn primary__btn'><Link to='/register'>Register</Link></Button>
+                                 <Button className='btn secondary__btn'><Link to='/login'>تسجيل الدخول</Link></Button>
+                                 <Button className='btn primary__btn'><Link to='/register'>تسجيل</Link></Button>
                               </>
                         }
                         {/* <Button className='btn secondary__btn'><Link to='/login'>Login</Link></Button>
